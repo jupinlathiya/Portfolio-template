@@ -1,0 +1,58 @@
+.UploadButton {
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+}
+.buttonWrapper {
+  margin: 0 auto;
+}
+.actionButton {
+  margin: 0 20px;
+}
+.actionButton:hover {
+  color: blue;
+}
+.UploadWrapper {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.image {
+  margin: 12px auto;
+}
+.uploadIcon {
+  @apply border-solid border-2 border-primary;
+  cursor: pointer;
+  border: 2px dashed primary;
+
+  max-width: 300px;
+  margin: 10px auto;
+  height: 106px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  font-weight: 400;
+}
+.image {
+  object-fit: contain;
+  margin: 0 auto;
+  height: 106px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uploadText {
+  font-weight: 600;
+  margin: 5px auto;
+}
+.instruction {
+  opacity: 0.6;
+}
+.errorMessage {
+  color: red;
+  text-align: center;
+}

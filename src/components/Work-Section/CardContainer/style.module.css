@@ -1,0 +1,4 @@
+.cardContainer {
+  @apply w-[80%] mx-auto pt-10;
+  height: 400px;
+}

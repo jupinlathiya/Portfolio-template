@@ -1,0 +1,76 @@
+.mobileNavbarContainer {
+  z-index: 100;
+  overflow: hidden;
+}
+.mobileNavbar {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  @apply bg-primary h-[100vh] w-[300px] min-w-[200px]  flex flex-col py-20 items-center space-y-10;
+}
+.logo_title {
+  @apply space-y-10 text-center cursor-pointer text-4xl flex flex-col justify-center items-center font-bold;
+}
+.logo_img {
+  @apply w-24 h-24 rounded-full;
+}
+.logo {
+  @apply text-center;
+}
+.title {
+  @apply text-lg  text-ternary;
+}
+.navoptions {
+  @apply flex flex-col space-y-10 w-32 text-ternary;
+}
+.navoption {
+  position: relative;
+  /* transition: all 1s; */
+  @apply min-w-full border-b-2 border-ternary text-center
+    cursor-pointer hover:text-secondary;
+}
+
+.navoption:hover .navoption_hover {
+  height: 100%;
+  top: 0%;
+  opacity: 0.7;
+}
+
+.iconContainer {
+  position: absolute;
+  top: -33px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.closeSliderIcon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  color: var(--color-ternary);
+}
+.closeSliderIcon:hover {
+  color: var(--color-secondary);
+}
+.secondary_text {
+  @apply text-secondary;
+}
+@media (min-width: 1024px) {
+  .mobileNavbarContainer {
+    display: none;
+  }
+}
+.navBtn {
+  background-color: var(--color-secondary);
+  color: white;
+  height: 35px;
+  align-self: center;
+  justify-self: end;
+  padding: 5px 10px;
+}
+.activeLink {
+  color: var(--color-secondary);
+  font-weight: 600;
+}

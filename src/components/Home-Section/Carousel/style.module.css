@@ -1,0 +1,13 @@
+.Caro_img {
+  @apply w-[100%] min-h-[350px] max-h-[750px];
+}
+
+.loader {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  @apply h-[750px];
+}
+.secondary_text {
+  @apply text-secondary;
+}

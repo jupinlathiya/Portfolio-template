@@ -1,0 +1,63 @@
+.themeNavbarContainer {
+  z-index: 101;
+  overflow: hidden;
+}
+.themeNavbar {
+  position: relative;
+  overflow: auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  @apply bg-primary h-[100vh] w-[320px] min-w-[200px]  flex flex-col py-20 items-center space-y-10;
+}
+.title {
+  @apply space-y-10 text-center cursor-pointer text-2xl flex flex-col justify-center items-center font-bold;
+}
+
+.title {
+  @apply text-lg  text-ternary;
+}
+.navoptions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding: 0 20px;
+}
+.navoption {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+  height: 90px;
+  @apply min-w-full   text-center
+      cursor-pointer hover:text-secondary;
+}
+
+.navoption:hover .navoption_hover {
+  height: 100%;
+  top: 0%;
+  opacity: 0.7;
+}
+
+.iconContainer {
+  position: absolute;
+  top: -33px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.closeSliderIcon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  color: var(--color-ternary);
+}
+.closeSliderIcon:hover {
+  color: var(--color-secondary);
+}
+@media (max-width: 768px) {
+  .navoptions {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

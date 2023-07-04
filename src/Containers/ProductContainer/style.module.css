@@ -1,0 +1,9 @@
+.ProductContainer {
+  min-height: 920px;
+  @apply py-20 bg-primary md:py-40;
+}
+@media screen and (max-width: 768px) {
+  .ProductContainer {
+    min-height: 0;
+  }
+}

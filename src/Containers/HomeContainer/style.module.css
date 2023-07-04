@@ -1,0 +1,35 @@
+.homeContainer {
+  position: relative;
+  min-height: 750px;
+  /* height: 750px; */
+  /* max-height: 750px; */
+}
+.Title {
+  @apply top-[15vw] min-h-[350px];
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 11;
+}
+.overlay {
+  background-color: var(--color-ternary);
+  opacity: 0.6;
+  width: 100%;
+  z-index: 10;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+@media screen and (max-width: 550px) {
+  .Title {
+    @apply top-[30vw] min-h-[350px];
+  }
+}
+@media screen and (max-width: 1150px) {
+  .homeContainer {
+    min-height: 0;
+  }
+  .Title {
+    @apply top-[20vw];
+  }
+}

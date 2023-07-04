@@ -1,0 +1,39 @@
+.settings {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.settingsIcon {
+  color: var(--color-primary);
+  animation: rotate 4s infinite linear;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sideBar {
+  position: absolute;
+
+  background-color: var(--color-secondary);
+
+  top: 0px;
+  min-height: 100vh;
+  right: -325px;
+  z-index: 100;
+  transition: all 0.5s;
+}
+.open {
+  right: 0;
+  display: block;
+}

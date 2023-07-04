@@ -1,0 +1,28 @@
+.activebtn {
+  background-color: var(--color-secondary) !important;
+  color: white !important;
+  border: none !important;
+  font-weight: 600;
+}
+.resetbtn {
+  color: black !important;
+  border: none !important;
+}
+.resetbtn:hover {
+  outline: 1px solid red;
+  color: var(--color-secondary) !important;
+}
+.btnContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.disabled {
+  background-color: gray !important;
+  color: white !important;
+  opacity: 0.5;
+}
+.formContainer {
+  padding: 10px;
+  @apply w-[90%] md:w-[50%];
+}

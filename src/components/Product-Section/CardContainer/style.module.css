@@ -1,0 +1,29 @@
+.cardContainer {
+  width: 80%;
+  margin: 2rem auto;
+}
+.paginate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: var(--color-secondary);
+}
+.active {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+.loader {
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_svg {
+  width: 40px;
+  height: 40px;
+  stroke: var(--color-ternary);
+}
+.nav_svg:hover {
+  stroke: var(--color-secondary);
+}

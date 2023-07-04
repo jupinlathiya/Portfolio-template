@@ -1,0 +1,10 @@
+.all_Icon_Container {
+  @apply flex justify-center py-2 space-x-5;
+}
+.icon {
+  fill: var(--color-ternary);
+  height: 20px;
+}
+.icon:hover {
+  fill: var(--color-secondary);
+}

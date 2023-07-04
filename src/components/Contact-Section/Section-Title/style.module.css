@@ -1,0 +1,4 @@
+.section_title {
+  font-family: "Montserrat", sans-serif;
+  @apply text-ternary text-3xl md:text-5xl font-bold text-center tracking-widest py-10;
+}

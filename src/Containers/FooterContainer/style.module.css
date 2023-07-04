@@ -1,0 +1,3 @@
+.footerContainer {
+  @apply cursor-pointer text-xl tracking-widest py-8 w-[80%] mx-auto;
+}

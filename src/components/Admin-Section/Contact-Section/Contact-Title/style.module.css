@@ -1,0 +1,3 @@
+.title {
+  @apply md:text-lg text-base font-extrabold flex justify-center text-black;
+}

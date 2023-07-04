@@ -1,0 +1,106 @@
+.formContainer {
+  background-color: #e4e0e0;
+  width: 100%;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginBtn {
+  @apply text-primary;
+  background-color: var(--color-secondary) !important;
+  width: 90px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 20px;
+  padding: 0.3rem 0.5rem;
+}
+.loginBtn:hover {
+  background-color: var(--color-secondary);
+  color: white !important;
+  border: none !important;
+  outline: none;
+}
+#label {
+  text-align: center !important;
+}
+.field {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
+}
+.field Input {
+  width: 100vw;
+  max-width: 350px;
+}
+.password {
+  width: 100vw;
+  max-width: 350px;
+}
+.form {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  padding: 3rem 1rem;
+
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formTitle {
+  font-size: x-large;
+  font-weight: 600;
+  text-align: center;
+  margin: 30px;
+}
+.loginPhoto {
+  width: 50px;
+  height: 50px;
+}
+Input {
+  width: 100%;
+}
+.link {
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: medium;
+  cursor: pointer;
+}
+.link:hover {
+  color: cornflowerblue;
+}
+@media screen and (max-width: 498px) {
+  .field Input {
+    width: 100%;
+  }
+  .password {
+    width: 93%;
+  }
+}
+
+.formFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+.blur {
+  filter: blur(5px);
+}

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root[data-theme="Glamorous Green"] {
+    --color-primary: #f0f7f7;
+    --color-secondary: #006565;
+    --color-ternary: #000000de;
+  }
+  :root[data-theme="Bright Brown"] {
+    --color-secondary: #80485b;
+    --color-primary: #fff0df;
+    --color-ternary: #000000de;
+  }
+  :root[data-theme="Wonderful Violet"] {
+    --color-secondary: #5854b1;
+    --color-primary: #f6f7fb;
+    --color-ternary: #000000de;
+  }
+  :root[data-theme="Sweet Sky"] {
+    --color-secondary: #68c8d5;
+    --color-primary: #f7faff;
+    --color-ternary: #000000de;
+  }
+  :root[data-theme="Pure Pitch"] {
+    --color-secondary: #e66060;
+    --color-primary: #f7e6e6;
+    --color-ternary: #000000de;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden !important;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,107 @@
+.loaderContainer {
+  @apply w-[100vw] h-[100vh] flex justify-center items-center;
+}
+.section {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  @apply bg-gradient-to-r
+  from-secondary
+  to-primary;
+  --tw-text-opacity: 1;
+
+  color: var(--color-ternary);
+  align-items: center;
+  justify-content: center;
+}
+.Container {
+  @apply container px-6 py-9 md:py-6 mx-auto my-24 max-w-[900px] bg-primary w-[90%];
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.productContainer {
+  @apply w-[100%] mx-auto flex flex-wrap justify-center;
+}
+.img {
+  @apply lg:w-1/2  object-cover object-center rounded;
+}
+.detailContainer {
+  @apply lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0;
+}
+.id {
+  @apply text-sm  text-secondary tracking-widest;
+}
+.name {
+  @apply text-secondary text-3xl my-5 font-medium mb-1;
+}
+.desc {
+  @apply leading-relaxed;
+}
+.category {
+  @apply flex  mt-6 items-center pb-5 border-b-2 border-black mb-5 text-secondary;
+}
+.price_download_share_container {
+  @apply flex;
+}
+.price {
+  @apply font-medium text-2xl text-ternary;
+}
+.readMore {
+  @apply text-blue-500;
+}
+.button {
+  @apply flex ml-auto text-white bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded;
+}
+.share {
+  @apply rounded-full w-12 h-12 bg-secondary p-0 border-0 inline-flex items-center justify-center text-primary ml-auto;
+}
+.errorContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: var(--color-primary);
+  width: 50%;
+  height: 520px;
+}
+
+.button_primary {
+  background-color: var(--color-secondary);
+  color: white;
+
+  margin: 0 10px;
+  min-width: 60px;
+  padding: 5px 25px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+    height: 50%;
+  }
+}
+.button_primary {
+  background-color: var(--color-secondary) !important;
+  color: white !important;
+  outline: none !important;
+  border: none !important;
+  margin: 0 10px;
+  padding: 5px 15px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.svg {
+  fill: var(--color-primary);
+  width: 20px;
+  height: 20px;
+}

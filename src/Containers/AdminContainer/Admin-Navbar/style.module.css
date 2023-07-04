@@ -1,0 +1,102 @@
+.hide {
+  transition: all 0.3s;
+  transform: translateX(-100%);
+  display: none;
+}
+
+.show {
+  transform: translateX(0%);
+  transition: all 0.3s;
+  position: absolute;
+}
+.navbarContainer {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+  @apply bg-primary border-solid border-white border-b-2;
+}
+.secondary_text {
+  @apply text-secondary;
+}
+.hamburger_logo {
+  position: absolute;
+  top: 12px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+.brand {
+  @apply cursor-pointer text-xl tracking-widest text-ternary font-bold;
+}
+.hamburger {
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  @apply bg-primary;
+}
+.hamburgerIcon {
+  color: var(--color-secondary);
+}
+.hamburgerIcon:hover {
+  color: "#B88B05";
+}
+
+.hamburger {
+  color: white;
+}
+@media screen and (min-width: "1024px") {
+  #mobileNavbar {
+    display: none;
+  }
+}
+.settings {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.settingsIcon {
+  color: var(--color-primary);
+  animation: rotate 4s infinite linear;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sideBar {
+  position: absolute;
+  display: none;
+  background-color: var(--color-secondary);
+
+  top: 0px;
+  min-height: 100vh;
+  right: -325px;
+  z-index: 15;
+  transition: all 0.5s;
+}
+.open {
+  right: 0;
+  display: block;
+  transition: all 1s;
+}
+.themeContainer {
+  overflow: hidden;
+  min-height: "100vh";
+}

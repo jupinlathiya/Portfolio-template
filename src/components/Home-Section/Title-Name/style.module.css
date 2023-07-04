@@ -1,0 +1,53 @@
+.title {
+  background: none;
+  width: 9.8ch;
+  animation: type 2.5s steps(25), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 5px solid;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  place-items: center;
+}
+.O {
+  @apply text-secondary;
+}
+@keyframes type {
+  from {
+    width: 0%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.title {
+  @apply text-[10vw] md:text-[6vw] text-primary;
+  font-weight: 700;
+}
+.title_and_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn {
+  background-color: var(--color-secondary);
+  border-radius: 6px;
+  padding: 7px 13px;
+  transition: all 0.3s;
+  font-weight: 600;
+  @apply text-primary;
+}
+.secondary_text {
+  @apply text-secondary;
+}
+
+@media screen and (max-width: 500px) {
+  .btn {
+    padding: 2px 5px;
+  }
+}

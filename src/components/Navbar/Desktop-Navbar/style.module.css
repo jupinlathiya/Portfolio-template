@@ -1,0 +1,43 @@
+.navbarContainer {
+  @apply bg-primary border-b-2 border-ternary;
+}
+.navbar {
+  @apply text-ternary mx-auto flex items-center justify-around  font-bold text-sm;
+}
+.navoptions {
+  @apply flex flex-row;
+}
+.navoption {
+  transition: all 0.3s;
+  @apply p-5 sm:px-[2rem];
+}
+.navoption:active {
+  color: var(--color-secondary);
+}
+.navoption a {
+  @apply hover:text-secondary cursor-pointer hover:underline;
+}
+.title {
+  @apply cursor-pointer text-xl tracking-widest;
+}
+@media screen and (max-width: 1024px) {
+  .navbarContainer {
+    display: none;
+  }
+}
+.navBtn {
+  margin-left: 50px;
+  background-color: var(--color-secondary);
+  color: white;
+  height: 35px;
+  border-radius: 6px;
+  align-self: center;
+  justify-self: end;
+  padding: 5px 10px;
+}
+.activeLink {
+  color: var(--color-secondary);
+}
+.secondary_text {
+  @apply text-secondary;
+}

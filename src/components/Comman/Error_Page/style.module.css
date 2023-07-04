@@ -1,0 +1,31 @@
+.container {
+  @apply flex
+      items-center
+      justify-center
+      w-screen
+      h-screen
+      bg-gradient-to-r
+      from-secondary
+      to-primary;
+}
+.link {
+  @apply px-6 py-2 text-sm font-semibold text-primary bg-secondary;
+}
+.subTitle {
+  @apply mb-8 text-center text-gray-500 md:text-lg;
+}
+.message {
+  @apply text-red-500;
+}
+.messageContainer {
+  @apply mb-2 text-2xl font-bold text-center text-gray-800 md:text-3xl;
+}
+.errorCode {
+  @apply font-bold text-secondary text-9xl;
+}
+.subContainer {
+  @apply px-40 py-20 bg-primary rounded-md shadow-xl;
+}
+.errorDetails {
+  @apply flex flex-col items-center;
+}

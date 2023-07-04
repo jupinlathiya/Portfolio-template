@@ -1,0 +1,88 @@
+.table_img {
+  width: 80px;
+  height: 50px;
+}
+.modal Button:hover {
+  background-color: var(--color-secondary) !important;
+  color: white !important;
+  border: none !important;
+}
+.modal {
+  width: 100vw;
+  height: 100vh;
+}
+table {
+  padding: 0 !important;
+}
+.title {
+  @apply text-lg text-black font-extrabold text-center md:text-left my-5;
+}
+.action_link {
+  @apply text-primary;
+  cursor: pointer;
+}
+.action_link_delete {
+  cursor: pointer;
+}
+.action_link_delete:hover {
+  color: red;
+}
+.action_link:hover {
+  @apply text-secondary;
+}
+.mainTableContainer {
+  border: 20px solid #e7ebf0;
+  border-radius: 1rem;
+  margin: 0 1rem;
+}
+.tableContainer {
+  overflow: auto;
+  scrollbar-width: thin !important;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(3px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(-3px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.delete:hover {
+  stroke: red;
+  animation: shake 0.5s;
+  scale: 1.1;
+}
+
+.svg_icon {
+  @apply stroke-black;
+}

@@ -1,0 +1,12 @@
+.title {
+  @apply cursor-pointer text-xl tracking-widest text-secondary;
+}
+.subHead {
+  @apply text-sm my-6;
+}
+.footerContainer {
+  @apply text-center;
+}
+.ternary_text {
+  @apply text-ternary;
+}

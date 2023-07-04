@@ -1,0 +1,98 @@
+.container {
+  height: 350px;
+  background-color: white;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.overlay {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: rgba(46, 46, 46, 0.7);
+  color: var(--color-primary);
+  opacity: 0;
+  transition: all 0.5s;
+  font-family: "Playfair Display", serif;
+}
+.items {
+  letter-spacing: 3px;
+}
+.head {
+  font-size: 2rem;
+  width: 100%;
+  line-height: 40px;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart hr {
+  display: block;
+  width: 0;
+  border: none;
+  border-bottom: solid 2px #fef5df;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+.cart {
+  font-size: 20px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+
+.readMoreBtn {
+  color: var(--color-secondary);
+}
+.container:hover .overlay {
+  opacity: 0.8;
+}
+.container:hover .overlay .head {
+  transform: translateY(0px);
+}
+.container:hover .overlay hr {
+  width: 100%;
+  transition-delay: 0.4s;
+}
+.container:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.container:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+.productName {
+  padding: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.readMoreBtn {
+  /* margin: 10px 0; */
+  background-color: var(--color-secondary) !important;
+  color: white !important;
+  outline: none !important;
+  border: none !important;
+  margin: 10px;
+  max-width: 140px;
+  min-width: 60px;
+  padding: 5px 15px;
+  font-weight: 600;
+  border-radius: 6px;
+}

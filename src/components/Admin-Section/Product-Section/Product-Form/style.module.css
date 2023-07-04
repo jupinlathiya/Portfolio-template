@@ -1,0 +1,59 @@
+.title {
+  @apply text-primary text-4xl border-b-2 border-secondary p-5 mb-5;
+}
+.button_modal {
+  background-color: var(--color-secondary) !important;
+  margin: 5px 10px;
+  padding: 5px 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  @apply text-white;
+}
+.button_modal_primary {
+  background-color: var(--color-secondary) !important;
+  color: white !important;
+  outline: none !important;
+  border: none !important;
+  margin: 0 10px;
+  padding: 5px 15px;
+  font-weight: 600;
+}
+.button_modal_secondary:hover {
+  color: rgb(230, 78, 78) !important;
+  border: 1px solid rgb(230, 78, 78) !important;
+}
+
+.modal_button_container {
+  @apply flex justify-center md:justify-end my-3;
+}
+.button_modal:hover {
+  @apply bg-secondary text-white !important;
+}
+.button_container {
+  @apply flex flex-row justify-end;
+}
+.field {
+  @apply flex flex-col gap-2 py-2;
+}
+.prev_img {
+  width: 300px;
+}
+.errorMessage {
+  color: red;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bottomline {
+  @apply border-b-2 border-secondary my-5;
+}
+.error {
+  color: red;
+}
+.prevImage {
+  height: 106px;
+  margin: 10px auto;
+}
+.btn_switch {
+  @apply flex justify-between;
+}
